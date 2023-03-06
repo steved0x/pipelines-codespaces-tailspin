@@ -82,7 +82,7 @@ You'll create GitHub secrets to run with your Azure DevOps self-hosted agent.
 
     ```yml
         pool:
-          name: `codespaces-agent-pool`    
+          name: 'codespaces-agent-pool'
     ```
 
 ### Notes
