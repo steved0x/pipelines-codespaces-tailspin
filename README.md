@@ -84,3 +84,7 @@ You'll create GitHub secrets to run with your Azure DevOps self-hosted agent.
         pool:
           name: `codespaces-agent-pool`    
     ```
+
+### Notes
+
+When working on the module, you can test out your code in the browser with GitHub Codespaces [port forwarding](https://docs.github.com/en/codespaces/developing-in-codespaces/forwarding-ports-in-your-codespace). 
