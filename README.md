@@ -37,9 +37,9 @@ You'll create GitHub secrets to run with your Azure DevOps self-hosted agent.
 
 1. In your GitHub repository, select **Settings** > **Secrets and variables** > **Codespaces**. 
 
-    ![Screenshot of codespaces secret](images/add-codespaces-secret.png)
+    ![Screenshot of Codespaces secret](images/add-codespaces-secret.png)
 
-1. Create three new Codepsaces secrets. 
+1. Create three new Codepsaces secrets.
 
     
     |Name  |Value  |
@@ -49,6 +49,38 @@ You'll create GitHub secrets to run with your Azure DevOps self-hosted agent.
     |ADO_POOL_NAME     |   Name of agent pool (Example: `codespaces-agent-pool`)      | 
     
 
-## Build your codespace
+## Build your Codespace
 
-1. 
+1. In your forked GitHub repository, select **Code**.
+
+1. Select the **Codespaces** tab.
+
+1. Press **...** to create a new Codespace with options.
+
+    ![Create new Codespace with options.](images/create-new-options-codespaces.png)
+
+1. Select the `AzurePipelines` Codespace option at `.devcontainer/ADOagent/devcontainer.json` and **Create codespace**. Leave the other default options. 
+
+    ![Select Azure DevOps Codespace option.](images/select-azdo-codespace-option.png)
+
+1. Wait for your Codespace to build. When the build completes, you'll be redirected to an online version of Visual Studio Code. 
+
+## Complete Learn module
+
+1. Go to [Create a build pipeline with Azure Pipelines](https://learn.microsoft.com/training/modules/create-a-build-pipeline/) and start the module.
+
+1. When see references to the hosted Ubuntu agent, replace the code snippet with a reference to your self-hosted agent. 
+
+    Remove this section of the YAML pipeline.
+
+    ```yml
+    pool:
+      vmImage: 'ubuntu-22.04'
+    ```
+
+    Add this section of the YAML pipeline.
+
+    ```yml
+        pool:
+          name: `codespaces-agent-pool`    
+    ```
