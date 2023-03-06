@@ -39,7 +39,7 @@ You'll create GitHub secrets to run with your Azure DevOps self-hosted agent.
 
     ![Screenshot of Codespaces secret](images/add-codespaces-secret.png)
 
-1. Create three new Codepsaces secrets.
+1. Create three new Codespaces secrets.
 
     
     |Name  |Value  |
