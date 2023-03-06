@@ -37,7 +37,7 @@ You'll create GitHub secrets to run with your Azure DevOps self-hosted agent.
 
 1. In your GitHub repository, select **Settings** > **Secrets and variables** > **Codespaces**. 
 
-    :::image type="content" source="images/add-codespaces-secret.png" alt-text="Screenshot of codespaces secret. ":::
+    ![Screenshot of codespaces secret](images/add-codespaces-secret.png)
 
 1. Create three new Codepsaces secrets. 
 
@@ -45,6 +45,10 @@ You'll create GitHub secrets to run with your Azure DevOps self-hosted agent.
     |Name  |Value  |
     |---------|---------|
     |ADO_ORG     |   Name of the Azure DevOps organization (Example: `fabrikam`)     |
-    |ADO_AT     |   Personal Access Token value      |
+    |ADO_PAT     |   Personal Access Token value      |
     |ADO_POOL_NAME     |   Name of agent pool (Example: `codespaces-agent-pool`)      | 
     
+
+## Build your codespace
+
+1. 
